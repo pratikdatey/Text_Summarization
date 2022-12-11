@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <h2 style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:xx-large;">Text Summarization </h2>
+  <head>
+    <br>
+    
+    <style>
+        
+      body {padding: 50px;
+        background-color: #222; /* Dark gray background color */
+        text-align: center; /* Center the content on the page */
+      }
+
+      input[type="text"] {
+        background-color: #333; /* Darker gray background color for the inputs */
+        color: #fff; /* White text color */
+        padding: 70px; /* Some padding to make the inputs more visible */
+        display:inline-block ; /* Display the inputs inline */
+        margin: 10px; /* Add some margin around the inputs */
+      }
+      input[type="percent"]{
+        background-color: #333; /* Darker gray background color for the inputs */
+        color: #fff; /* White text color */
+        padding: 10px; /* Some padding to make the inputs more visible */
+        display: inline-block; /* Display the inputs inline */
+        margin: 10px; /* Add some margin around the inputs */
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="/" method="POST" >
+        <input type="text" placeholder="Enter a text" id="text" name='text'  >
+        
+        <input type="percent" placeholder="Enter a percentage " id="percent" name="percent"><br><br>
+        <p style="color: white; font-size: mediumcls; font-family: 'Times New Roman', Times, serif; word-spacing: 2px;"><b>Percentage :- </b> Percentage signifies how much percentage of summary you want from input text.</p>
+        <input type="submit" value="Summarize" >
+
+
+        
+    
+  </body>
+</html>
+<br><br>    
+<br>
+<br>
+<br>
+
+<div style="color: rgb(255, 255, 255);  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  font-size: medium; word-spacing: 2px; text-align: center;" > <b style="color: white;">Input Text</b> <br><br>
+    {{ input }}</div><br><br><br><br>
+
+<div style="color: rgb(235, 231, 14);  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large; word-spacing: 2px; text-align: center;" > <b style="color: white;">Summary</b> <br><br>
+     {{ output }}
+</div>
