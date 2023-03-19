@@ -1,3 +1,5 @@
 spacy
 heapq
+spacy
+heapq
 flask
