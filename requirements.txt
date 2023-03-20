@@ -1,5 +1,3 @@
 spacy
-heapq
-spacy
-heapq
+heapq_max
 flask
